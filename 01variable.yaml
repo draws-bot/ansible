@@ -9,7 +9,7 @@
     ansible.builtin.debug:
       msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
   - name: variable paste
-    ansible.builtin,debug:
+    ansible.builtin.debug:
       msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
 
 

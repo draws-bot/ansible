@@ -6,8 +6,8 @@
     duration: "6months"
   tasks:
   - name: paste
-      vars: # Task level variables
-        Course: "DevOps"
+    vars: # Task level variables
+      course: "DevOps"
     ansible.builtin.debug:
       msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
   

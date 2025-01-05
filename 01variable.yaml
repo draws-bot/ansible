@@ -2,7 +2,7 @@
   hosts: localhost
   vars: 
     Trainer: "sandeep"
-    course: "devops"
+    course: "terraform"
     duration: "6months"
   tasks:
   - name: paste

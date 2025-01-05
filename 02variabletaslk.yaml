@@ -10,6 +10,12 @@
       Course: "DevOps"
     ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+  - name: print and information
+    vars:
+      Trainer: sandeep
+      course: ansible
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
 
   - name: print information
     ansible.builtin.debug:

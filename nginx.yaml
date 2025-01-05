@@ -1,7 +1,7 @@
 
 
 - name: install and nginx
-  host: localhost
+  hosts: localhost
   become: yes  # equal to -b in adhoc commands, getting root access
   task:
   - name: install nginx
@@ -13,6 +13,11 @@
      name: nginx
      state: started
      enabled: yes
+
+
+
+
+
 
 
 

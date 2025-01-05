@@ -1,3 +1,7 @@
+
+
+
+
 - name: installing packages
   hosts: localhost
   become: yes
@@ -6,10 +10,10 @@
     ansible.builtin.dnf:
       name: "{{item}}"
       state: latest
-   loop:
-   - mysql
-   - nginx
-   - ansible
+    loop:
+    - mysql
+    - nginx
+    - ansible
 
 
 

@@ -1,0 +1,11 @@
+- name: installing packges
+  hosts: localhosts
+  become: yes
+  tasks:
+  - name: installing
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: latest
+  loops:
+  - mysql
+  - nginx

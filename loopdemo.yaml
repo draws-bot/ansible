@@ -1,9 +1,10 @@
-- name: loops
-  hosts: localhosts
+
+- name: install packages
+  hosts: web
   become: yes
   tasks:
-  - name: print
-    ansible.builtin.debug:
+  - name: install packages
+    ansible.builtin.dnf:
       name: "{{ item }}"
       state: latest
     loop:

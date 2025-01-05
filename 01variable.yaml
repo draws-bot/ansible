@@ -1,13 +1,17 @@
 - name: variable
   hosts: localhost
   vars: 
-   Trainer: "sandeep"
-   course: "devops"
-   duration: "6months"
+    Trainer: "sandeep"
+    course: "devops"
+    duration: "6months"
   tasks:
-    - name: paste
-      ansible.builtin.debug:
-        msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
-    - name: variable paste
-      ansible.builtin,debug:
-        msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
+  - name: paste
+    ansible.builtin.debug:
+      msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
+  - name: variable paste
+    ansible.builtin,debug:
+      msg: "hi we are training {{course}} ,with trainer {{Trainer}} ,duration is {{duration}}"
+
+
+
+

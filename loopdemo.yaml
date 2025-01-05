@@ -8,3 +8,19 @@
     - linux
     - shell
     - ansible
+
+
+
+
+
+- name: installing packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: installing packages
+    ansible.builtin.dnf:
+      name: "{{item}}"
+   loop:
+   - mysql
+   - nginx
+   - ansible
